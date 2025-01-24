@@ -1,0 +1,307 @@
+:root{
+    --main-font: 'Montserrat', 'Noto Sans TC', sans-serif;
+    --color-text-primary: #fff;
+    --sizing-1_5: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: black; */
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    z-index: 99;
+}
+/* #logo{
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+} */
+
+#logo img{
+    max-height: 34px;
+    max-width: 100%; 
+}
+
+#menu{
+    display: flex;
+    font-size: 1.1vw;
+    margin-right: 2.1vw;
+    gap: 30px;
+}
+
+#menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 540;
+}
+
+#page1-middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* #page2{
+    background-color: rgb(100, 38, 38);
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#page2-middle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: var(--main-font);
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    line-height: 80px;
+}
+#page2-background{
+    position: absolute;
+    left: -55%;
+    bottom: -30%;
+}
+#page2-background img{
+    height: 1600px;
+    width: 1600px;
+} */
+
+#page2{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+}
+#page2-middle{    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: var(--sizing-1_5, 24px);
+    font-family: IBM Plex Sans, Noto Sans TC, sans-serif;
+}
+#page2-middle strong {
+    color: var(--color-text-primary, #fff);
+    font-family: IBM Plex Sans, Noto Sans TC, sans-serif;
+    font-size: var(--sizing-1_5, 24px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+#page3{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page3 canvas{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60%;
+    height: 60%;
+    z-index: 99;
+}
+
+#page4{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#page4-main,#page6-main,#page8-main{
+    max-width: 21vw;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+#page5-main,#page7-main,#page9-main{
+    max-width: 21vw;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+#page4-1,#page5-1,#page6-1,#page7-1,#page8-1,#page9-1 {
+    color: var(--color-text-accent, #ff6200);
+    font-family: IBM Plex Sans, Noto Sans TC, sans-serif;
+    font-size: var(--sizing-0_875, 14px);
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: .7px;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 1.2vw;
+}
+
+#page4-2,#page5-2,#page6-2,#page7-2,#page8-2,#page9-2 {
+    font-family: IBM Plex Sans, Noto Sans TC, sans-serif;
+    font-size: var(--sizing-1_5, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: rgba(255, 255, 255, 0.6);
+}
+#page4-2 strong,#page5-2 strong,#page6-2 strong,#page7-2 strong,#page8-2 strong,#page9-2 strong{
+    font-family: IBM Plex Sans, Noto Sans TC, sans-serif;
+    font-size: var(--sizing-1_5, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-text-primary, #fff);
+}
+
+#page5{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page6{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#page7{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page8{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page9{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page10,#page11,#page12,#page13{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    height: 130vh;
+    width: 100vw;
+}
+
+#page10-main,#page11-main,#page12-main,#page13-main{
+   margin-left: 6.5vw;
+   margin-top: 10vh;
+   margin-right: 6.5vw;
+}
+#page10-heading,#page11-heading,#page12-heading,#page13-heading{
+    font-family: IBM Plex Sans, Noto Sans TC, sans-serif;
+    font-size: var(--sizing-1_5, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 30px;
+    margin-left: 4.5vw;
+}
+#page10-heading strong,#page11-heading strong,#page12-heading strong,#page13-heading strong{
+    color: var(--color-text-primary, #fff);
+}
+#page10-button,#page11-button,#page12-button,#page13-button{
+    display: flex;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 250px;
+    margin-bottom: 40px;
+    margin-left: 4.5vw;
+}
+
+.temp-button {
+    padding: 5px 15px;
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: IBM Plex Sans, Noto Sans TC, sans-serif;
+    font-size: var(--sizing-0_875, 19px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.temp-button.active {
+    background: #fff;
+    color: #000;
+    border-radius: 3px;
+}
+.chart-container{
+    margin-top: 20px;
+}
+.chart-image{
+    width: 100%;
+    height: auto;
+}
+#page10-bottom,#page11-bottom,#page12-bottom,#page13-bottom{
+    margin-top: 60px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: IBM Plex Sans, Noto Sans TC, sans-serif;
+    font-size: var(--sizing-0_875, 14px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

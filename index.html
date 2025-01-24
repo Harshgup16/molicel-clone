@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOLICEL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <img src="https://www.molicel.com/wp-content/themes/molicel/img/molicel_logo-1200by334-W.png" alt="MOLICEL">
+        </div>
+        <div id="menu">
+            <a href="">About</a>
+            <a href="">Info</a>
+            <a href="">Academy</a>
+            <a href="">Contact</a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+              </svg>
+            </a>
+        </div>
+    </nav>
+    <div id="main">
+
+        <div id="page1">
+            <canvas></canvas>
+        </div>
+        <!-- <div id="page2">
+            <h2 id="page2-middle">
+                Market-Leading <br>Ultra-High Power Cells <br>with the Superior <br>Power-to-Energy Ratio.
+            </h2>
+            <div id="page2-background">
+                <img src="https://www.molicel.com/wp-content/themes/molicel/p50b/img/background-circle.png" alt="" srcset="">
+            </div>
+        </div> -->
+        <div id="page2">
+            <div id="page2-middle">
+                Compared to its predecessor, the P45B, it offers significantly <strong>higher runtime</strong>, <strong>better retention</strong>, and a <strong>slower heating rate</strong>, effectively <strong>doubling the cycle life</strong>. This makes it ideal for high-demand applications where both power and endurance are essential.
+            </div>
+        </div>
+        <div id="page3">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div id="page4">
+            <div id="page4-main">
+                <div id="page4-1">Feature 1</div>
+                <div id="page4-2">
+                    The <strong>high-nickel layered oxide cathode</strong> is engineered to deliver an impressive <strong>energy density of 265 Wh/kg</strong>.
+                </div>
+            </div>
+        </div>
+        <div id="page5">
+            <div id="page5-main">
+                <div id="page5-1">Feature 2</div>
+                <div id="page5-2">
+                    The <strong>high-nickel layered oxide cathode</strong> is engineered to deliver an impressive <strong>energy density of 265 Wh/kg</strong>.
+                </div>
+            </div>
+        </div>
+        <div id="page6">
+            <div id="page6-main">
+                <div id="page6-1">Feature 3</div>
+                <div id="page6-2">
+                    The <strong>high-nickel layered oxide cathode</strong> is engineered to deliver an impressive <strong>energy density of 265 Wh/kg</strong>.
+                </div>
+            </div>
+        </div>
+        <div id="page7">
+            <div id="page7-main">
+                <div id="page7-1">Feature 4</div>
+                <div id="page7-2">
+                    The <strong>high-nickel layered oxide cathode</strong> is engineered to deliver an impressive <strong>energy density of 265 Wh/kg</strong>.
+                </div>
+            </div>
+        </div>
+        <div id="page8">
+            <div id="page8-main">
+                <div id="page8-1">Feature 5</div>
+                <div id="page8-2">
+                    The <strong>high-nickel layered oxide cathode</strong> is engineered to deliver an impressive <strong>energy density of 265 Wh/kg</strong>.
+                </div>
+            </div>
+        </div>
+        <div id="page9">
+            <div id="page9-main">
+                <div id="page9-1">Feature 6</div>
+                <div id="page9-2">
+                    The <strong>high-nickel layered oxide cathode</strong> is engineered to deliver an impressive <strong>energy density of 265 Wh/kg</strong>.
+                </div>
+            </div>
+        </div>
+        <div id="page10">
+            <div id="page10-main">
+                <div id="page10-heading">
+                    <strong>Direct current resistance</strong> compared to P45B.
+                </div>
+                <div id="page10-button">
+                    <button class="temp-button active">23°C</button>
+                    <button class="temp-button">45°C</button>
+                    <button class="temp-button">60°C</button>
+                </div>
+                <div class="chart-container">
+                    <img src="https://www.molicel.com/wp-content/uploads/chart_1-3-d@2x.png" alt="Battery Performance Chart" class="chart-image">
+                </div>
+                <div id="page10-bottom">
+                    Charge: CCCV 4.5A &amp; 5.0A/4.2V (50mA current taper) ​| Discharge: 1A/120s with 10A/10s pulses to 2.5V​
+                </div>
+            </div>
+        </div>
+        <div id="page11">
+            <div id="page11-main">
+                <div id="page11-heading">
+                    <strong>Discharge rate map</strong> compared to P45B.
+                </div>
+                <div id="page11-button">
+                    <button class="temp-button active">0.2C</button>
+                    <button class="temp-button">0.5°C</button>
+                    <button class="temp-button">1°C</button>
+                </div>
+                <div class="chart-container">
+                    <img src="https://www.molicel.com/wp-content/uploads/chart_2-1-d@2x.png" alt="Battery Performance Chart" class="chart-image">
+                </div>
+                <div id="page11-bottom">
+                    Charge: CCCV 4.5A & 5.0A/4.2V (50mA current taper) ​| Discharge: 1A/120s with 10A/10s pulses to 2.5V​
+                </div>
+            </div>
+        </div>
+        <div id="page12">
+            <div id="page12-main">
+                <div id="page12-heading">
+                    <strong>Long cycle runtime capacity</strong> compared to P45B.
+                </div>
+                <div id="page12-button">
+                    <button class="temp-button active">+3C/-1C</button>
+                    <button class="temp-button">+5C/-1C</button>
+                </div>
+                <div class="chart-container">
+                    <img src="https://www.molicel.com/wp-content/uploads/chart_3-1-d@2x.png" alt="Battery Performance Chart" class="chart-image">
+                </div>
+                <div id="page12-bottom">
+                    Ambient Temperature: 23°C | 4.2-2.5V
+                </div>
+            </div>
+        </div>
+        <div id="page13">
+            <div id="page13-main">
+                <div id="page13-heading">
+                    <strong>Long cycle retention</strong> compared to P45B.
+                </div>
+                <div id="page13-button">
+                    <button class="temp-button active">+3C/-1C</button>
+                    <button class="temp-button">+5C/-1C</button>
+                </div>
+                <div class="chart-container">
+                    <img src="https://www.molicel.com/wp-content/uploads/chart_4-1-d@2x.png" alt="Battery Performance Chart" class="chart-image">
+                </div>
+                <div id="page13-bottom">
+                    Ambient Temperature: 23°C | 4.2-2.5V
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
